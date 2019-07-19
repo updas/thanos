@@ -23,9 +23,9 @@ ENV MSSQL_PID=Developer
 
 WORKDIR /src
 
-ADD https://raw.githubusercontent.com/aubyoung/thanos/master/sql-server/initialize-database.sql ./
-ADD https://raw.githubusercontent.com/aubyoung/thanos/master/sql-server/setup-database.ps1 ./
-ADD https://raw.githubusercontent.com/aubyoung/thanos/master/sql-server/entrypoint.ps1 ./
+ADD https://raw.githubusercontent.com/updas/thanos/master/sql-server/initialize-database.sql ./
+ADD https://raw.githubusercontent.com/updas/thanos/master/sql-server/setup-database.ps1 ./
+ADD https://raw.githubusercontent.com/updas/thanos/master/sql-server/entrypoint.ps1 ./
 
 # Grant permissions for the setup-database and entrypoint shell scripts to be executable
 RUN chmod +x ./setup-database.ps1
